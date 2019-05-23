@@ -1,0 +1,17 @@
+#隨機生成變數序列
+import random
+a=random.randint(10,99)
+b=random.randint(10,99)
+c=random.randint(10,99)
+d=random.randint(10,99)
+e=random.randint(10,99)
+f=random.randint(10,99)
+alist=[a,b,c,d,e,f]
+#Bubblesort
+def bubblesort(list):#定義bubblesort函數
+    for b in range(len(list),1,-1): 
+        for i in range(1,b): #i為計數器
+            if list[i-1]>list[i]: #逐次檢查i
+               list[i],list[i-1]=list[i-1],list[i]
+    return result_list
+    final_list=bubblesort(alist)#排列完成
